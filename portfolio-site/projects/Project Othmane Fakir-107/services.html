@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Tengen Uzui (1).jpeg">
+    <title>FLAMEBOYANT</title>
+    <link rel="stylesheet" href="acceuil.css">
+    <style>
+        .heade {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.heade h1 {
+  color: #FFD700;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.heade p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.service-card {
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 280px;
+  text-align: center;
+  margin-bottom: 30px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+.service-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #FFD700;
+}
+
+.service-card h2 {
+  color: #FFD700;
+  margin: 15px 0;
+  font-size: 1.5rem;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+.service-card button {
+    background: linear-gradient(to right, #FFD700, #FFA500);
+    color: #121212;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.5);
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card button:hover {
+    background: linear-gradient(to right, #FFA500, #FF4500);
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(255, 165, 0, 0.7);
+}
+
+.service-card button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(255, 165, 0, 0.5);
+    background: linear-gradient(to right, #FF4500, #FFA500);
+}
+.cart-container {
+            background-color: #222;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            text-align: center;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .cart-container h2 {
+            color: #FFD700;
+            margin-bottom: 20px;
+        }
+        .cart-buttons button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .cart-buttons .clear-cart {
+            background-color: #ff0000;
+            color: #fff;
+        }
+
+        .cart-buttons .checkout {
+            background-color: #FFD700;
+            color: #000;
+        }
+
+        .cart-buttons button:hover {
+            opacity: 0.9;
+        }
+        .cart {
+            background-color: #222;
+            color: #fff;
+            padding: 20px;
+            margin: 30px auto;
+            border-radius: 10px;
+            max-width: 800px;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .cart h2 {
+            color: #FFD700;
+            margin-bottom: 15px;
+        }
+
+        .cart-items {
+            margin-bottom: 20px;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .cart-item span {
+            font-size: 1rem;
+        }
+
+        .cart-buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .cart-buttons button {
+            background-color: #FFD700;
+            border: none;
+            color: #333;
+            padding: 10px 20px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cart-buttons button:hover {
+            background-color: #FFC107;
+        }
+        .search-bar {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .search-bar input {
+            width: 50%;
+            padding: 10px 15px;
+            border: 2px solid #FFD700;
+            border-radius: 20px;
+            font-size: 1rem;
+            color: #000;
+        }
+        #le{
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <a href="acceuil.html">Home Page</a>
+            <a href="A propos.html">A propos</a>
+            <a href="services.html">Services</a>
+            <a href="Contact.html">Contact</a>
+            <a href="Mention.html">Mention legales</a>
+            <a href="login.html">Login</a>
+        </nav>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for products...">
+        </div>
+        <div class="heade">
+            <h1>Our Services</h1>
+            <p>Explore our collection of anime-themed merchandise, including plushies, pop, phone cases, hoodies, figures, and key rings!</p>
+        </div>
+            <h1 class="section-header" style="display: flex; justify-content: center;">Plushies :</h1>
+            <div class="services-container">
+                <div class="service-card" data-name="Tengen plushie" data-price="20-">
+                    <img src="images (1).jpeg" alt="Plushies">
+                    <h2>Tengen Plushie</h2>
+                    <p>Soft and cuddly plushies from your favorite anime characters.</p>
+                    <p>Price : 20$</p>
+                    <button><a id="le" href="info.html">Add to Cart</a></button>
+                </div>
+                <div class="service-card" data-name="Gojo and Geto plushie" data-price="45">
+                    <img src="g.png" alt="Plushies">
+                    <h2>Gojo and Geto Plushies</h2>
+                    <p>Soft and cuddly plushies from your favorite anime characters.</p>
+                    <p>Price : 45$</p>
+                    <button onclick="addToCart('Plushie')">Add to Cart</button>
+                </div>
+                <div class="service-card" data-name="plushie" data-price="18">
+                    <img src="2.png" alt="Plushies">
+                    <h2>Plushies</h2>
+                    <p>Soft and cuddly plushies from your favorite anime characters.</p>
+                    <p>Price : 18$</p>
+                    <button onclick="addToCart('Plushie')">Add to Cart</button>
+                </div>
+                <div class="service-card" data-name="Itadorie plushie" data-price="22">
+                    <img src="9k.png" alt="Plushies">
+                    <h2>Itadorie Plushie</h2>
+                    <p>Soft and cuddly plushies from your favorite anime characters.</p>
+                    <p>Price : 22$</p>
+                    <button onclick="addToCart('Plushie')">Add to Cart</button>
+                </div>
+                <div class="service-card" data-name="Frieren plushie" data-price="19">
+                    <img src="images.png" alt="Plushies">
+                    <h2>Frieren Plushie</h2>
+                    <p>Soft and cuddly plushies from your favorite anime characters.</p>
+                    <p>Price : 19$</p>
+                    <button onclick="addToCart('Plushie')">Add to Cart</button>
+                </div>
+            </div>
+            <hr>
+            <h1 class="section-header" style="display: flex; justify-content: center;">Phone Cases :</h1>
+            <div class="services-container">
+                <div class="service-card" data-name="Gojo and Sukuna phone case" data-price="15">
+                    <img src="a.png" alt="Plushies">
+                    <h2>Gojo and Sukuna phone cases</h2>
+                    <p>Protect your phone in style with anime-inspired phone cases.</p>
+                    <p>Price : 15$</p>
+                    <button onclick="addToCart('Phone Case')">Add to Cart</button>
+                </div>
+                <div class="service-card" data-name="Itachi phone case" data-price="12">
+                    <img src="b.png" alt="Plushies">
+                    <h2>Itachi phone case</h2>
+                    <p>Protect your phone in style with anime-inspired phone cases.</p>
+                    <p>Price : 10$</p>
+                    <button onclick="addToCart('Phone Case')">Add to Cart</button>
+                </div>
+                <div class="service-card" data-name="Naruto phone case" data-price="12">
+                    <img src="c.png" alt="Plushies">
+                    <h2>Naruto phone case</h2>
+                    <p>Protect your phone in style with anime-inspired phone cases.</p>
+                    <p>Price : 12$</p>
+                    <button onclick="addToCart('Phone Case')">Add to Cart</button>
+                </div>
+                <div class="service-card" data-name="Zoro phone case" data-price="14">
+                    <img src="d.png" alt="Plushies">
+                    <h2>Zoro phone case</h2>
+                    <p>Protect your phone in style with anime-inspired phone cases.</p>
+                    <p>Price : 14$</p>
+                    <button onclick="addToCart('Phone Case')">Add to Cart</button>
+                </div>
+                <div class="service-card" data-name="Giyu phone case" data-price="8">
+                    <img src="e.png" alt="Plushies">
+                    <h2>Giyu phone case</h2>
+                    <p>Protect your phone in style with anime-inspired phone cases.</p>
+                    <p>Price : 8$</p>
+                    <button onclick="addToCart('Phone Case')">Add to Cart</button>
+                </div>
+            </div>
+            <hr>
+            <h1 class="section-header" style="display: flex; justify-content: center;">Key Ring :</h1>
+            <div class="services-container">
+                <div class="service-card" data-name="Saber key ring" data-price="4">
+                    <img src="images (2).jpeg" alt="Plushies">
+                    <h2>Saber key ring</h2>
+                    <p>Carry your anime fandom with you with our unique key rings.</p>
+                    <p>Price : 4$</p>
+                    <button onclick="addToCart('Key Rings')">Add to Cart</button>
+                </div>
+                <div class="service-card" data-name="Nagi key ring" data-price="4,5">
+                    <img src="images (3).jpeg" alt="Plushies">
+                    <h2>Nagi key ring</h2>
+                    <p>Carry your anime fandom with you with our unique key rings.</p>
+                    <p>Price : 4,5$</p>
+                    <button onclick="addToCart('Key Rings')">Add to Cart</button>
+                </div>
+                <div class="service-card" data-name="Ichigo key ring" data-price="4">
+                    <img src="images (4).jpeg" alt="Plushies">
+                    <h2>Ichigo key ring</h2>
+                    <p>Carry your anime fandom with you with our unique key rings.</p>
+                    <p>Price : 4$</p>
+                    <button onclick="addToCart('Key Rings')">Add to Cart</button>
+                </div>
+                <div class="service-card" data-name="Rudeus key ring" data-price="5">
+                    <img src="rudeus.webp" alt="Plushies">
+                    <h2>Rudeus key ring</h2>
+                    <p>Carry your anime fandom with you with our unique key rings.</p>
+                    <p>Price : 5$</p>
+                    <button onclick="addToCart('Key Rings')">Add to Cart</button>
+                </div>
+                <div class="service-card" data-name="Asta key ring" data-price="3,5">
+                    <img src="images (5).jpeg" alt="Plushies">
+                    <h2>Asta key ring</h2>
+                    <p>Carry your anime fandom with you with our unique key rings.</p>
+                    <p>Price : 3,5$</p>
+                    <button onclick="addToCart('Key Rings')">Add to Cart</button>
+                </div>
+            </div>
+            <hr>
+            <h1 class="section-header" style="display: flex; justify-content: center;">Hoodies :</h1>
+            <div class="services-container">
+                <div class="service-card" data-name="Goku hoodie" data-price="25">
+                    <img src="ada8295b61d8e13a369d732d06492a3b7d5f0fd7_original.jpeg" alt="Plushies">
+                    <h2>Goku hoddie</h2>
+                    <p>Comfortable and stylish hoodies to showcase your anime fandom.</p>
+                    <p>Price : 25$</p>
+                    <button onclick="addToCart('hoodie')">Add to Cart</button>
+                </div>
+                <div class="service-card" data-name="Death Note hoodie" data-price="20">
+                    <img src="61S9DPXHRKS._AC_UY1000_.jpg" alt="Plushies">
+                    <h2>Death Note hoodie</h2>
+                    <p>Comfortable and stylish hoodies to showcase your anime fandom.</p>
+                    <p>Price : 20$</p>
+                    <button onclick="addToCart('hoodie')">Add to Cart</button>
+                </div>
+                <div class="service-card" data-name="Tetsuya hoodie" data-price="40">
+                    <img src="download.jpeg" alt="Plushies">
+                    <h2>Tetsuya hoodie</h2>
+                    <p>Comfortable and stylish hoodies to showcase your anime fandom.</p>
+                    <p>Price : 40$</p>
+                    <button onclick="addToCart('hoodie')">Add to Cart</button>
+                </div>
+                <div class="service-card" data-name="Thorfin hoodie" data-price="32">
+                    <img src="images (6).jpeg" alt="Plushies">
+                    <h2>Thorfin hoodie</h2>
+                    <p>Comfortable and stylish hoodies to showcase your anime fandom.</p>
+                    <p>Price : 32$</p>
+                    <button onclick="addToCart('hoodie')">Add to Cart</button>
+                </div>
+                <div class="service-card" data-name="Todoroki hoodie" data-price="27">
+                    <img src="shoto-noodles.jpg" alt="Plushies">
+                    <h2>Todoroki hoodie</h2>
+                    <p>Comfortable and stylish hoodies to showcase your anime fandom.</p>
+                    <p>Price : 27$</p>
+                    <button onclick="addToCart('hoodie')">Add to Cart</button>
+                </div>
+            </div>
+            <div class="cart">
+                <h2>Shopping Cart</h2>
+                <div class="cart-items"></div>
+                <p><strong>Total:</strong> $<span id="total-price">0</span></p>
+                <div class="cart-buttons">
+                    <button id="clear-cart">Clear Cart</button>
+                    <button id="checkout">Complete Payment</button>
+                </div>
+            </div>
+            <hr>
+            <section class="footer">
+                <div class="footer-container">
+                  <div class="footer-about">
+                    <h2>FLAMEBOYANT</h2>
+                    <p>
+                      Your best site for anime plushies figures hoodies and keyring and more.
+                    </p>
+                  </div>
+                  <div class="footer-social">
+                    <h3>FOLLOW FOR MORE</h3>
+                    <a href="#"><img src="facebook-logo.gif" alt="Facebook" /></a>
+                    <a href="#"><img src="x-twitter.gif" alt="Twitter" /></a>
+                    <a href="#"><img src="glitch-insta.gif" alt="Instagram" /></a>
+                  </div>
+                  <div class="footer-contact">
+                    <h3>OUR INFO</h3>
+                    <p>Email: helpers@FLAMEBOYANT.com</p>
+                    <p>Phone: +212 752 9*****</p>
+                    <p>Address: 123 OULFA Street, Casablanca,</p>
+                  </div>
+                </div>
+                <div class="footer-bottom">
+                  <p>&copy; 2024 FLAMEBOYANT.</p>
+                </div>
+              </section>
+              <script>
+                const cartItems = document.querySelector('.cart-items');
+                const totalPriceEl = document.getElementById('total-price');
+                const clearCartBtn = document.getElementById('clear-cart');
+                const checkoutBtn = document.getElementById('checkout');
+        
+                let cart = [];
+                let total = 0;
+        
+                
+                document.querySelectorAll('.service-card button').forEach(button => {
+                    button.addEventListener('click', (e) => {
+                        const card = e.target.closest('.service-card');
+                        const name = card.dataset.name;
+                        const price = parseInt(card.dataset.price);
+        
+                        cart.push({ name, price });
+                        total += price;
+        
+                        updateCart();
+                    });
+                });
+        
+
+                function updateCart() {
+                    cartItems.innerHTML = '';
+                    cart.forEach((item, index) => {
+                        const itemEl = document.createElement('div');
+                        itemEl.classList.add('cart-item');
+                        itemEl.innerHTML = `<span>${item.name}</span><span>$${item.price}</span>`;
+                        cartItems.appendChild(itemEl);
+                    });
+        
+                    totalPriceEl.textContent = total;
+                }
+        
+
+                clearCartBtn.addEventListener('click', () => {
+                    cart = [];
+                    total = 0;
+                    updateCart();
+                });
+        
+                checkoutBtn.addEventListener('click', () => {
+                    alert('Thank you for your purchase!');
+                    cart = [];
+                    total = 0;
+                    updateCart();
+                });
+            </script>
+                <script>
+                    
+                    const searchInput = document.getElementById('searchInput');
+                    const serviceCards = document.querySelectorAll('.service-card');
+            
+                    searchInput.addEventListener('input', () => {
+                        const filter = searchInput.value.toLowerCase();
+                        serviceCards.forEach(card => {
+                            const productName = card.dataset.name.toLowerCase();
+                            if (productName.includes(filter)) {
+                                card.style.display = 'block';
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        });
+                    });
+                </script>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plushie - FLAMEBOYANT</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 50px;
+        }
+
+        .product-image {
+            width: 50%;
+        }
+
+        .product-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-details {
+            width: 40%;
+        }
+
+        .product-details h1 {
+            color: #FFD700;
+        }
+
+        .product-details p {
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        .product-details button {
+            background: linear-gradient(to right, #FFD700, #FFA500);
+            color: #121212;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(255, 215, 0, 0.5);
+            transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-details button:hover {
+            background: linear-gradient(to right, #FFA500, #FF4500);
+            color: #fff;
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(255, 165, 0, 0.7);
+        }
+        .product-details button:active{
+            transform: scale(0.95);
+            box-shadow: 0 2px 4px rgba(255, 165, 0, 0.5);
+            background: linear-gradient(to right, #FF4500, #FFA500);
+        }
+        .back-button {
+            display: block;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .back-button a {
+            display: inline-block;
+            background-color: #FFD700;
+            color: #333;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button a:hover {
+            background: linear-gradient(to right, #FFA500, #FF4500);
+            color: #fff;
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(255, 165, 0, 0.7);
+        }
+        .back-button a:active{
+            transform: scale(0.95);
+            box-shadow: 0 2px 4px rgba(255, 165, 0, 0.5);
+            background: linear-gradient(to right, #FF4500, #FFA500);
+        }
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <div class="product-image">
+            <img src="images (1).jpeg" alt="Plushie">
+        </div>
+        <div class="product-details">
+            <h1>Tengen Plushie</h1>
+            <p>Soft, cuddly, and perfect for anime fans of all ages. Made from high-quality materials for a huggable experience.</p>
+            <p>Price: $20</p>
+            <button>Add to Cart</button>
+            <div class="back-button">
+                <a href="services.html">Back to Services</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
